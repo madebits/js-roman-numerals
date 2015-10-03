@@ -1,0 +1,25 @@
+<HTML>
+<HEAD><TITLE>Roman Numerals Parsing Demo. -
+Copyright 2001 - by Vasian CEPA</TITLE>
+<script src="roman.js"></script>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<script>
+// the rest is just a test
+function convert(type){
+	var d = document.f1;
+	if(type == "roman")
+		d.t2.value = toRoman(d.t1.value);
+	else
+		d.t1.value = toArabic(d.t2.value);
+}
+</script>
+<H4>Arabic to Roman & vice-versa conversion demo. (Range 1-9999)</H4>
+<FORM NAME="f1">
+Enter an arabic number: <INPUT TYPE="text" NAME="t1" SIZE="30" VALUE="4530">
+<INPUT TYPE="button" VALUE="To Roman Number" onClick="convert('roman');"><br>
+Enter a roman number: <INPUT TYPE="text" NAME="t2" SIZE="30" VALUE="">
+<INPUT TYPE="button" VALUE="To Arabic Number" onClick="convert('arabic');">
+</FORM>
+</BODY>
+</HTML>
